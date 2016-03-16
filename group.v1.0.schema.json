@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Definition for a group in ContentCentral",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/kiefernwald/cc-json-schemas/master/contentelement.v1.0.schema.json#"
+    },
+    {
+      "properties": {
+        "elements": {
+          "description": "Elements of group",
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/kiefernwald/cc-json-schemas/master/contentelement.v1.0.schema.json#"
+          }
+        }
+      }
+    }
+  ]
+}
