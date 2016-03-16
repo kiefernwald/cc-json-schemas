@@ -1,0 +1,25 @@
+swagger: '2.0'
+info:
+  title: ContentCentral RW API
+  description: Read-write API for ContentCentral
+  version: "1.0.0"
+host: rw.cc.kiefernwald.net
+schemes:
+  - https
+  - http
+basePath: /v1
+produces:
+  - application/json
+paths:
+  /users/{uuid}/root:
+    get:
+      parameters:
+        - name: uuid
+          in: path
+          required: true
+          type: string
+      responses:
+        200:
+          description: Returns root group element
+          schema:
+            $ref: '../schema/group.v1.0.schema.json#'
