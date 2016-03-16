@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Definition for a heading in ContentCentral",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./contentelement.v1.0.schema.json#"
+    },
+    {
+      "properties": {
+        "text": {
+          "description": "Text content of heading",
+          "type": "string"
+        },
+        "level": {
+          "description": "Heading level",
+          "type": "integer"
+        }
+      }
+    }
+  ]
+}
