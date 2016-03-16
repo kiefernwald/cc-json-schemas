@@ -4,7 +4,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/kiefernwald/cc-json-schemas/master/contentelement.v1.0.schema.json#"
+      "$ref": "./contentelement.v1.0.schema.json#"
     },
     {
       "properties": {
