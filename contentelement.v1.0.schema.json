@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Definition for a content element in ContentCentral",
+    "type": "object",
+    "required": [
+        "id",
+        "type_name",
+        "name",
+        "slug"
+    ],
+    "properties": {
+        "id": {
+            "description": "ID of element. This is a UUIDv4.",
+            "type": "string"
+        },
+        "type_name": {
+            "description": "Type name of element",
+            "type": "string",
+            "enum": ["paragraph", "heading", "image", "group"]
+        },
+        "name": {
+            "description": "Display name of element",
+            "type": "string"
+        },
+        "slug": {
+            "description": "A URL friendly version of the element's name",
+            "type": "string"
+        },
+        "index": {
+            "description": "Index of the element. This describes how elements should be ordered.",
+            "type": "integer"
+        },
+        "created_at": {
+            "description": "Date and time when this element was created. ISO 8601 compatible format.",
+            "type": "string"
+        },
+        "updated_at": {
+            "description": "Date and time when this element was last updated. ISO 8601 compatible format.",
+            "type": "string"
+        }
+    }
+}
